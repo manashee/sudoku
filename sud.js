@@ -64,4 +64,6 @@
 //     // return 
 // }
 
-// find 
+// find all valid values that are not in the square, in the same column and same row
+// diff ( valid values , dedup ( values in the square union values in the col union values in the row ) ) 
+

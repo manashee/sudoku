@@ -67,3 +67,39 @@
 // find all valid values that are not in the square, in the same column and same row
 // diff ( valid values , dedup ( values in the square union values in the col union values in the row ) ) 
 
+// Now a major question is how should 
+
+
+// What are the queries - this determines the datastructure
+// Queries will be coming from Square, Row and Col
+// But this calculation needs to be done only once
+// When you create a Square you can also compute what values are missing.
+// when you create a Row / Col , you can compute what values are missing. 
+// From the cell, we need to easily find the row and the col
+
+// The interface to set it up should be easy, and powerful , and expressive. 
+
+// Start it from top most level. From specifications
+// write the interface down which the customer might use, the testers might use
+// How a customer might set it up. 
+// look at other implementations. what interface have they used?
+// an array of rows seem to be the intuitive interface
+// the external interface must be designed for ease of use
+// internally it can be represented / stored for efficiency
+
+
+// what is the most straight forward algo that you can think of 
+// for each value which is 0 ( vacant ) find probable values
+// probable value for a vacant cell is a list of values that can be used to fill it
+// this is the list of those values which are absent in  square, row and col of that cell 
+// square is a function that returns a set of values in the square of the cell
+// row is a function that returns a set of values in the row of the cell
+// col is a function that returns a set of values in the col of the cell
+
+
+// come up with the minimum amount of code to solve the problem
+// the right abstractions are minimalist abstractions needed to solve the problem
+
+// values
+// write straight forward - useful code, keeping aim in mind
+// 
